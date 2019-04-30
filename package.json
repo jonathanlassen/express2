@@ -1,0 +1,31 @@
+{
+  "name": "expresstest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "playstore.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app",
+    "dev": "nodemon app",
+    "debug": "ndb node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanlassen/expresstest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonathanlassen/expresstest/issues"
+  },
+  "homepage": "https://github.com/jonathanlassen/expresstest#readme",
+  "keywords": [],
+  "devDependencies": {
+    "nodemon": "^1.18.11"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
