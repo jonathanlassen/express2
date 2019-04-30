@@ -13,7 +13,7 @@ app.get('/apps', (req, res) => {
       if(!['rating', 'app'].includes(sort)) {
         return res
           .status(400)
-          .send('Sort must be one of title or rank');
+          .send('Sort must be one of rating or app');
       }
     }
     let results = []
@@ -24,8 +24,6 @@ app.get('/apps', (req, res) => {
             .send('search must be of provided categories');
         }
         results = apps.filter(app => app.Genres === genres )
-        console.log(results)
-        console.log('hi')
       } else
       {
           results = apps
