@@ -4,10 +4,9 @@
   "description": "",
   "main": "playstore.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app",
-    "dev": "nodemon app",
-    "debug": "ndb node app"
+    "test": "mocha",
+    "start": "node server",
+    "dev": "nodemon server"
   },
   "repository": {
     "type": "git",
@@ -21,9 +20,13 @@
   "homepage": "https://github.com/jonathanlassen/expresstest#readme",
   "keywords": [],
   "devDependencies": {
-    "nodemon": "^1.18.11"
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "supertest": "^4.0.2"
   },
   "dependencies": {
+    "chai-sorted": "^0.2.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "morgan": "^1.9.1"
